@@ -12,7 +12,10 @@ body{
     justify-content: center;
     align-items: center;
     /* border :2px solid red; */
-    background-color:#000;
+    /* background-color:#000; */
+    background-image: url("https://images.pexels.com/photos/53459/lightning-storm-weather-sky-53459.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     width:500px;
