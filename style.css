@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border:none;
+    outline: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border :2px solid red; */
+    background-color:#000;
+}
+.container{
+    width:500px;
+    border: 2px solid red;
+    height: min-content;
+    padding:30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.searchbox{
+    /* border: 2px solid green; */
+    width:100%;
+    height:min-content;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.input_box{
+    /* border:2px solid black; */
+    width:80%;
+    text-transform: capitalize;
+    font-size: 2rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding:5px 10px;
+    color:#000;
+}
+.input_box::placeholder{
+    color:#000
+}
+.searchbox button{
+    width:20%;
+    font-size: 2rem;
+    background-color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    
+ 
+}
+.searchbox button:hover{
+    /* transform: scale(1.2); */
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    background-color: rgb(97, 218, 97);
+}
+.wheather_body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap:1rem; */
+    margin-block: 20px;
+}
+.wheatherImage{
+    width:50%;
+}
+.weather_box{
+    margin-block: 2rem;
+}
+.temp,.description{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.weather_details{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+   /* border:2px solid red; */
+}
+.humidity,.wind_speed{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.humidity{
+    margin-left: 2.5rem;
+}
+.wind_speed{
+    margin-right: 2.5rem;
+}
+.weather_details i{
+    font-size: 2rem;
+}
+.weather_details .text{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.location-not-found{
+    margin-top: 1rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.location-not-found h1{
+    font-size: 1.2rem;
+    color:red;
+    margin-block-end: 1.5rem;
+}
+    
+.location-not-found img{
+    width: 80%;
+}
